@@ -38,10 +38,12 @@ try {
     const sManifest = path.join(__dirname, "release_manifest.json");
     let expectedExeSha = sha256File(path.join(srcBin, "eschaton.exe"));
     let expectedGuiSha = sha256File(path.join(srcBin, "eschaton-gui.exe"));
-    if ((!expectedExeSha || !expectedGuiSha) && fs.existsSync(sManifest)) {
+    let pkgVersion = "0.1.1";
+    if (fs.existsSync(sManifest)) {
       try {
         const man = JSON.parse(fs.readFileSync(sManifest, "utf8"));
-        if (Array.isArray(man.files)) {
+        if (man.version) pkgVersion = man.version;
+        if ((!expectedExeSha || !expectedGuiSha) && Array.isArray(man.files)) {
           for (const f of man.files) {
             if (f.path === "bin/eschaton.exe") expectedExeSha = (f.sha256 || "").toLowerCase();
             if (f.path === "bin/eschaton-gui.exe") expectedGuiSha = (f.sha256 || "").toLowerCase();
@@ -98,10 +100,25 @@ try {
       }
       if (fs.existsSync(destExe)) {
         try {
+          const uninstPs1 = path.join(homeDir, "uninstall.ps1");
+          const uninstCmd = `powershell.exe -NoProfile -ExecutionPolicy Bypass -File "${uninstPs1}"`;
+          const regKey = "HKCU\\Software\\Microsoft\\Windows\\CurrentVersion\\Uninstall\\{9E4B7C2A-51F8-4D3E-A812-7C09E5B31421}_is1";
+          execSync(`reg.exe add "${regKey}" /v DisplayName /t REG_SZ /d "Eschaton Covenant Manager" /f`, { stdio: "ignore", windowsHide: true });
+          execSync(`reg.exe add "${regKey}" /v DisplayVersion /t REG_SZ /d "${pkgVersion}" /f`, { stdio: "ignore", windowsHide: true });
+          execSync(`reg.exe add "${regKey}" /v Publisher /t REG_SZ /d "COMSECT1 Sovereign Architecture" /f`, { stdio: "ignore", windowsHide: true });
+          execSync(`reg.exe add "${regKey}" /v DisplayIcon /t REG_SZ /d "${destGui}" /f`, { stdio: "ignore", windowsHide: true });
+          execSync(`reg.exe add "${regKey}" /v InstallLocation /t REG_SZ /d "${homeDir}" /f`, { stdio: "ignore", windowsHide: true });
+          execSync(`reg.exe add "${regKey}" /v UninstallString /t REG_SZ /d "${uninstCmd.replace(/"/g, '\\"')}" /f`, { stdio: "ignore", windowsHide: true });
+          execSync(`reg.exe add "${regKey}" /v QuietUninstallString /t REG_SZ /d "${uninstCmd.replace(/"/g, '\\"')}" /f`, { stdio: "ignore", windowsHide: true });
+          execSync(`reg.exe add "${regKey}" /v NoModify /t REG_DWORD /d 1 /f`, { stdio: "ignore", windowsHide: true });
+          execSync(`reg.exe add "${regKey}" /v NoRepair /t REG_DWORD /d 1 /f`, { stdio: "ignore", windowsHide: true });
+          execSync(`reg.exe add "${regKey}" /v EstimatedSize /t REG_DWORD /d 9600 /f`, { stdio: "ignore", windowsHide: true });
+        } catch (_) {}
+        try {
           execSync(`"${destExe}" daemon start --listen 0.0.0.0:47821`, { stdio: "ignore", windowsHide: true });
         } catch (_) {}
       }
-      console.log("[eschaton] Updated native binaries and started daemon at " + destBin);
+      console.log("[eschaton] Updated native binaries (" + pkgVersion + ") and started daemon at " + destBin);
     }
   }
 } catch (err) {
