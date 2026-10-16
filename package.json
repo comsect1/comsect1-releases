@@ -3,10 +3,7 @@
   "version": "0.1.1",
   "description": "Eschaton Sovereign Root Authority, Hardware Security Dongle Studio, 5-Axis License Daemon, MCP Server & C-ABI SDK (Release Installer)",
   "license": "LicenseRef-COMSECT1-Proprietary",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/comsect1/comsect1-releases.git"
-  },
+  "homepage": "https://github.com/comsect1/comsect1-releases",
   "os": ["win32"],
   "cpu": ["x64"],
   "bin": {
