@@ -30,9 +30,7 @@ try {
     fs.mkdirSync(hostDir, { recursive: true });
 
     const feedFile = path.join(hostDir, "update_feed.txt");
-    if (!fs.existsSync(feedFile)) {
-      try { fs.writeFileSync(feedFile, feedUrl + "\n", "utf8"); } catch (_) {}
-    }
+    try { fs.writeFileSync(feedFile, feedUrl + "\n", "utf8"); } catch (_) {}
 
     const srcBin = path.join(__dirname, "native", "bin");
     const sManifest = path.join(__dirname, "release_manifest.json");
@@ -115,7 +113,7 @@ try {
           execSync(`reg.exe add "${regKey}" /v EstimatedSize /t REG_DWORD /d 9600 /f`, { stdio: "ignore", windowsHide: true });
         } catch (_) {}
         try {
-          execSync(`"${destExe}" daemon start --listen 0.0.0.0:47821`, { stdio: "ignore", windowsHide: true });
+          execSync(`"${destExe}" daemon restart --listen 0.0.0.0:47821`, { stdio: "ignore", windowsHide: true });
         } catch (_) {}
       }
       console.log("[eschaton] Updated native binaries (" + pkgVersion + ") and started daemon at " + destBin);
