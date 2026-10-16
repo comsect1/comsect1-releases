@@ -1,0 +1,85 @@
+{
+    "schema":  "eschaton.release-manifest.v1",
+    "package":  "prd-tool-eschaton",
+    "version":  "0.1.1",
+    "target":  "x86_64-pc-windows-msvc",
+    "git_commit":  "a24fc2b9f95df6cdc850b6db38666eb46a83ac54",
+    "built_at_utc_sec":  1792127395,
+    "files":  [
+                  {
+                      "path":  "install.ps1",
+                      "size_bytes":  4120,
+                      "sha256":  "3fab53f9fe78ae337f69c90a91f43c3cafd58ea9f90300825004c787a7acd461"
+                  },
+                  {
+                      "path":  "LICENSE.md",
+                      "size_bytes":  20148,
+                      "sha256":  "31264b7584155a9dbbab6637e96af8f517b7089d620106cd0ec1d0b13cc2f2a3"
+                  },
+                  {
+                      "path":  "NOTICE.md",
+                      "size_bytes":  489,
+                      "sha256":  "add1b13f11f39658e41a8b3f9f7d8cbc45981501536c636c46283d34df0f3318"
+                  },
+                  {
+                      "path":  "README.md",
+                      "size_bytes":  7769,
+                      "sha256":  "00e340cf08dba4a1f98eb0b3e605f216c6db04cfeb31d602b57daef9801c9e0b"
+                  },
+                  {
+                      "path":  "uninstall.ps1",
+                      "size_bytes":  1159,
+                      "sha256":  "f5f03a4b482d2f1a56e9d4871e847d7bfb83da9df4fa9086363adb756644a983"
+                  },
+                  {
+                      "path":  "bin/eschaton-gui.exe",
+                      "size_bytes":  2862080,
+                      "sha256":  "85b9aabc411b4c920cc971743423b0334e2c68cfd53063daf465d2bce6185acd"
+                  },
+                  {
+                      "path":  "bin/eschaton.exe",
+                      "size_bytes":  2862592,
+                      "sha256":  "8b10673bfc0db243d74348ecedf77259723aea8ff7bc0c57fc4d3db78cd758df"
+                  },
+                  {
+                      "path":  "plugins/eschaton-covenant-operator/mcp.json",
+                      "size_bytes":  393,
+                      "sha256":  "1709d874e4c07e758304e4b081d6392f0d5d5fbb2ecc32b5a791d7b31829a9b6"
+                  },
+                  {
+                      "path":  "plugins/eschaton-covenant-operator/plugin.json",
+                      "size_bytes":  742,
+                      "sha256":  "f52b96922fcc5e247fc06d12deadeb41be975136fd6dcf33bbef8393840e1ba2"
+                  },
+                  {
+                      "path":  "plugins/eschaton-covenant-operator/README.md",
+                      "size_bytes":  2965,
+                      "sha256":  "68128704a68df100cc28a97f49dd38205633b48e8cb3f86e0646357567aab626"
+                  },
+                  {
+                      "path":  "plugins/eschaton-covenant-operator/skills/eschaton-seat-management/SKILL.md",
+                      "size_bytes":  3961,
+                      "sha256":  "61bcc700236a7c6cfca01eafd4d0b5c6d51ada997780a77bfdb869ad714dd273"
+                  },
+                  {
+                      "path":  "plugins/eschaton-covenant-operator/skills/eschaton-secret-and-delegation/SKILL.md",
+                      "size_bytes":  5141,
+                      "sha256":  "1c0ec2c36bfdcdbe8738cc0ab86e5004363977f59b311f9f160f63fdc47682f2"
+                  },
+                  {
+                      "path":  "sdk/include/eschaton_sdk.h",
+                      "size_bytes":  1169,
+                      "sha256":  "e35be495c023de0ab734d749820f4caa65319195db64c5c3f26245f38b5547c9"
+                  },
+                  {
+                      "path":  "sdk/lib/eschaton_sdk.dll",
+                      "size_bytes":  1021440,
+                      "sha256":  "67153b35d9ca1a377b7e25aca2c68ed0fa8542954a5397b376b87f6d6a879da4"
+                  },
+                  {
+                      "path":  "sdk/lib/eschaton_sdk.dll.lib",
+                      "size_bytes":  2692,
+                      "sha256":  "4db471fc703e4b03fff5cd4570cc47c26b26203a535e4a48789a136df179ae10"
+                  }
+              ]
+}
