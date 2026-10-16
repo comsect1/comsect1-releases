@@ -36,7 +36,7 @@ try {
     const sManifest = path.join(__dirname, "release_manifest.json");
     let expectedExeSha = sha256File(path.join(srcBin, "eschaton.exe"));
     let expectedGuiSha = sha256File(path.join(srcBin, "eschaton-gui.exe"));
-    let pkgVersion = "v0.1.1 build 3";
+    let pkgVersion = "v0.1.1 build 4";
     if (fs.existsSync(sManifest)) {
       try {
         const man = JSON.parse(fs.readFileSync(sManifest, "utf8"));
