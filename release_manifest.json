@@ -4,7 +4,7 @@
   "version": "0.1.1",
   "target": "x86_64-pc-windows-msvc",
   "git_commit": "a24fc2b9f95df6cdc850b6db38666eb46a83ac54",
-  "built_at_utc_sec": 1792128884,
+  "built_at_utc_sec": 1792129146,
   "files": [
     {
       "path": "install.ps1",
@@ -33,13 +33,13 @@
     },
     {
       "path": "bin/eschaton-gui.exe",
-      "size_bytes": 2871808,
-      "sha256": "4b02e97ecbedf90481611a63505d0159c7d8238ff2f9116a29356d7ea5525067"
+      "size_bytes": 2872832,
+      "sha256": "c3ede2bb4ec50f31a41b216ae332559cedc840d9bd95e5fa1ff15c79ed26d28f"
     },
     {
       "path": "bin/eschaton.exe",
-      "size_bytes": 2872320,
-      "sha256": "62b9cf9da58265b2550fcfccfa0146b29caa54b99f1ca6c9f021acdce39abdbe"
+      "size_bytes": 2872832,
+      "sha256": "be1e9665d9bd359a7e33f3719b17b9a4e9cd833d8ebec54b7d4d6fffec3b2381"
     },
     {
       "path": "plugins/eschaton-covenant-operator/mcp.json",
