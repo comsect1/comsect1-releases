@@ -4,7 +4,7 @@
   "version": "0.1.1",
   "target": "x86_64-pc-windows-msvc",
   "git_commit": "a24fc2b9f95df6cdc850b6db38666eb46a83ac54",
-  "built_at_utc_sec": 1792128072,
+  "built_at_utc_sec": 1792128884,
   "files": [
     {
       "path": "install.ps1",
@@ -33,13 +33,13 @@
     },
     {
       "path": "bin/eschaton-gui.exe",
-      "size_bytes": 2868224,
-      "sha256": "bca5e508f90c56dbdf01271d85b915e5b4ff4ead80462aa77949892b6a2e616e"
+      "size_bytes": 2871808,
+      "sha256": "4b02e97ecbedf90481611a63505d0159c7d8238ff2f9116a29356d7ea5525067"
     },
     {
       "path": "bin/eschaton.exe",
-      "size_bytes": 2868224,
-      "sha256": "dbd64694b3467b23d3024896cc0e2be470d54100fffbf9437cbbfaeced16445d"
+      "size_bytes": 2872320,
+      "sha256": "62b9cf9da58265b2550fcfccfa0146b29caa54b99f1ca6c9f021acdce39abdbe"
     },
     {
       "path": "plugins/eschaton-covenant-operator/mcp.json",
@@ -74,7 +74,7 @@
     {
       "path": "sdk/lib/eschaton_sdk.dll",
       "size_bytes": 1021440,
-      "sha256": "67153b35d9ca1a377b7e25aca2c68ed0fa8542954a5397b376b87f6d6a879da4"
+      "sha256": "9ba0b71747d07d03802d8e49c795845754348cff7c85afab047f93e6c491c3e2"
     },
     {
       "path": "sdk/lib/eschaton_sdk.dll.lib",
