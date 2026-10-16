@@ -36,11 +36,13 @@ try {
     const sManifest = path.join(__dirname, "release_manifest.json");
     let expectedExeSha = sha256File(path.join(srcBin, "eschaton.exe"));
     let expectedGuiSha = sha256File(path.join(srcBin, "eschaton-gui.exe"));
-    let pkgVersion = "0.1.1";
+    let pkgVersion = "v0.1.1 build 2";
     if (fs.existsSync(sManifest)) {
       try {
         const man = JSON.parse(fs.readFileSync(sManifest, "utf8"));
-        if (man.version) pkgVersion = man.version;
+        if (man.display_version) pkgVersion = man.display_version;
+        else if (man.version && man.build) pkgVersion = "v" + man.version + " build " + man.build;
+        else if (man.version) pkgVersion = man.version;
         if ((!expectedExeSha || !expectedGuiSha) && Array.isArray(man.files)) {
           for (const f of man.files) {
             if (f.path === "bin/eschaton.exe") expectedExeSha = (f.sha256 || "").toLowerCase();
