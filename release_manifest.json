@@ -6,12 +6,12 @@
     "display_version":  "v0.1.1 build 3",
     "target":  "x86_64-pc-windows-msvc",
     "git_commit":  "a24fc2b9f95df6cdc850b6db38666eb46a83ac54",
-    "built_at_utc_sec":  1792133221,
+    "built_at_utc_sec":  1792133377,
     "files":  [
                   {
                       "path":  "install.ps1",
                       "size_bytes":  6220,
-                      "sha256":  "5fc852aea66081b2ae74fad9c062887435b4be4a2f106a27732071fa1668e621"
+                      "sha256":  "445b67535977df05f9c2c5905f069c36bf14a846134d72395ac1256cc4e0043d"
                   },
                   {
                       "path":  "LICENSE.md",
@@ -31,7 +31,7 @@
                   {
                       "path":  "uninstall.ps1",
                       "size_bytes":  2012,
-                      "sha256":  "7108dbe36316f41cd4c98724b3077341cda59ee7ac52a09a7f17b8752135d937"
+                      "sha256":  "f1dfa8b83233d15cf54bd8c3861b6a95be9eee1f65987a492e5eac20d917378e"
                   },
                   {
                       "path":  "bin/eschaton-gui.exe",
