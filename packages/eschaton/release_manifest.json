@@ -2,16 +2,16 @@
     "schema":  "eschaton.release-manifest.v1",
     "package":  "prd-tool-eschaton",
     "version":  "0.1.1",
-    "build":  3,
-    "display_version":  "v0.1.1 build 3",
+    "build":  4,
+    "display_version":  "v0.1.1 build 4",
     "target":  "x86_64-pc-windows-msvc",
     "git_commit":  "a24fc2b9f95df6cdc850b6db38666eb46a83ac54",
-    "built_at_utc_sec":  1792133377,
+    "built_at_utc_sec":  1792135056,
     "files":  [
                   {
                       "path":  "install.ps1",
                       "size_bytes":  6220,
-                      "sha256":  "445b67535977df05f9c2c5905f069c36bf14a846134d72395ac1256cc4e0043d"
+                      "sha256":  "8fd968568249e8431f2cf3c0906401eaf3d520ad10654cc2c2409f1124d37eaa"
                   },
                   {
                       "path":  "LICENSE.md",
@@ -35,13 +35,13 @@
                   },
                   {
                       "path":  "bin/eschaton-gui.exe",
-                      "size_bytes":  2885632,
-                      "sha256":  "e1403c4cc174db145b7e6ef2d50b6e38d7ae46669673091c77ad7757cd5ea48f"
+                      "size_bytes":  2886144,
+                      "sha256":  "2e298858533f7a1ebcfc566dc115fbbb2d3d2f21428f4a5f6016b987cfe69810"
                   },
                   {
                       "path":  "bin/eschaton.exe",
-                      "size_bytes":  2886144,
-                      "sha256":  "87a3c2ca65a79c85e52da5962fa40be004ee6b8f692004e0e7bff81ee969fcc4"
+                      "size_bytes":  2886656,
+                      "sha256":  "83ebcf6af557bfcf66f2c13042899f5a46f78d3722366fffb4945351b20943bf"
                   },
                   {
                       "path":  "plugins/eschaton-covenant-operator/mcp.json",
@@ -76,7 +76,7 @@
                   {
                       "path":  "sdk/lib/eschaton_sdk.dll",
                       "size_bytes":  1021952,
-                      "sha256":  "890fc1742ed51c235ae1b32fa82802891b4905b258d0b1b91222b9d5aa879020"
+                      "sha256":  "4e0c7b4c48109253e6155b33127fb88bdfe75d8d14bac4796894800347c93c99"
                   },
                   {
                       "path":  "sdk/lib/eschaton_sdk.dll.lib",
