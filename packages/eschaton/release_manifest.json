@@ -2,12 +2,12 @@
   "schema": "eschaton.release-manifest.v1",
   "package": "prd-tool-eschaton",
   "version": "0.1.1",
-  "build": 17,
-  "display_version": "v0.1.1 build 17",
+  "build": 18,
+  "display_version": "v0.1.1 build 18",
   "target": "x86_64-pc-windows-msvc",
   "os_arch": "windows-x86_64",
-  "git_commit": "e97fb922350458f97ca60c0b040c92760633bf6a",
-  "built_at_utc_sec": 1792486568,
+  "git_commit": "ab411144d8883cab78a4b371b518ed2a52909b4e",
+  "built_at_utc_sec": 1792488124,
   "platforms": {
     "windows-x86_64": {
       "os": "windows",
@@ -16,11 +16,11 @@
       "bundle_asset": "eschaton-latest-windows-x86_64.zip",
       "versioned_bundle_asset": "eschaton-0.1.1-windows-x86_64.zip",
       "setup_asset": "eschaton-setup-latest-windows-x86_64.exe",
-      "exe_sha256": "2016760d50e1639ac82c773907378e5c88dd8a0d096890eb98192f4ffcdb1b84",
-      "gui_sha256": "bc239babe7fccec52c32e64498b3d95b3b6c0d7820d63b8eb56a8e9eb0b48e81",
-      "dll_sha256": "00bdebdba305914f6b099cd6805b99f9d855e8eb21b19be3ebf18be7a969db4e",
-      "bundle_sha256": "4e36784c8b65d6ef3e40e53963e7d22cb4f99713c2103124d77306da6fb96d65",
-      "bundle_size_bytes": 7157131
+      "exe_sha256": "6c57e32c01483cc89967412c61e0089e80554d9e3cd15a6fc4c8b9ccd0e00da7",
+      "gui_sha256": "b1443463a01fae36279915e56efdd4b49f0b0025d916dcb209a449760ae90360",
+      "dll_sha256": "95407f9c3e24e68890643050860d1e4782dbd37539e521082bc0517dcf09f42f",
+      "bundle_sha256": "7e78bdf21c4fb879e4f841a6786b1f485c690ad8e0f6f626eac60b82bdc5f5bd",
+      "bundle_size_bytes": 7160147
     }
   },
   "files": [
@@ -51,13 +51,13 @@
     },
     {
       "path": "bin/eschaton-gui.exe",
-      "size_bytes": 6134784,
-      "sha256": "bc239babe7fccec52c32e64498b3d95b3b6c0d7820d63b8eb56a8e9eb0b48e81"
+      "size_bytes": 6140416,
+      "sha256": "b1443463a01fae36279915e56efdd4b49f0b0025d916dcb209a449760ae90360"
     },
     {
       "path": "bin/eschaton.exe",
-      "size_bytes": 6135808,
-      "sha256": "2016760d50e1639ac82c773907378e5c88dd8a0d096890eb98192f4ffcdb1b84"
+      "size_bytes": 6140928,
+      "sha256": "6c57e32c01483cc89967412c61e0089e80554d9e3cd15a6fc4c8b9ccd0e00da7"
     },
     {
       "path": "plugins/eschaton-covenant-operator/mcp.json",
@@ -92,7 +92,7 @@
     {
       "path": "sdk/lib/eschaton_sdk.dll",
       "size_bytes": 3924480,
-      "sha256": "00bdebdba305914f6b099cd6805b99f9d855e8eb21b19be3ebf18be7a969db4e"
+      "sha256": "95407f9c3e24e68890643050860d1e4782dbd37539e521082bc0517dcf09f42f"
     },
     {
       "path": "sdk/lib/eschaton_sdk.dll.lib",
